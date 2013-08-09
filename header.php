@@ -20,10 +20,6 @@
 <body <?php body_class(); ?>>
 
 <?php do_action( 'before' ); ?>
-<header id="fforward-cover">
-<?php if ( ! dynamic_sidebar( 'sidebar-1' ) ) : ?>
-<?php endif; // end sidebar widget area ?>
-</header>
 
 <div id="page" class="hfeed site">
 	<header id="masthead" class="site-header" role="banner">
@@ -36,13 +32,6 @@
 			</h1>
 			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
 		</div>
-
-		<nav id="site-navigation" class="main-navigation" role="navigation">
-			<h1 class="menu-toggle"><?php _e( 'Menu', 'fforward' ); ?></h1>
-			<div class="screen-reader-text skip-link"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'fforward' ); ?>"><?php _e( 'Skip to content', 'fforward' ); ?></a></div>
-
-			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
-		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
 
 	<div id="main" class="site-main">
