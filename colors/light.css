@@ -1,0 +1,72 @@
+/* FaceForward Light Scheme */
+body {
+	background: #8dcae7;
+}
+.site-title a {
+	color: rgba(0,0,0,0.95);
+}
+.site-description {
+	color: rgba(0,0,0,0.7);
+}
+.page-header {
+	color: rgba(0,0,0,0.8);
+}
+
+article.page {
+	background: rgba(255,255,255,0.95);
+}
+
+h1.entry-title a {
+	-webkit-font-smoothing: antialiased;
+}
+.entry-header {
+	background: rgba(255,255,255,0.3);
+}
+.entry-header .entry-meta {
+	color: rgba(0,0,0,0.4);
+	-webkit-font-smoothing: antialiased;
+}
+.entry-header .entry-meta a {
+	color: rgba(0,0,0,0.4);
+}
+.entry-header .entry-meta a:hover {
+	color: rgba(0,0,0,0.6);
+}
+
+footer.entry-meta {
+	color: rgba(0,0,0,0.3);
+}
+footer.entry-meta a {
+	color: rgba(0,0,0,0.4);
+}
+footer.entry-meta a:hover {
+	color: rgba(0,0,0,0.4);
+}
+
+.entry-content,
+.comments-area {
+	color: #555;
+	color: rgba(0,0,0,0.7);
+}
+.entry-content h1,
+.entry-content h2,
+.entry-content h3,
+.entry-content h4,
+.entry-content h5,
+.entry-content h6 {
+	color: #777;
+	color: rgba(0,0,0,0.5);
+}
+
+article.format-standard .entry-content {
+	background: rgba(255,255,255,0.95);
+}
+
+#masthead {
+	background: rgba(255,255,255,0.3);
+	border-bottom: 1px solid rgba(0,0,0,0.01);
+}
+
+#secondary {
+	background: rgba(255,255,255,0.3);
+}

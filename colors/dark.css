@@ -1,0 +1,73 @@
+/* FaceForward Dark Scheme */
+body {
+	background: #25353c;
+}
+.site-title a {
+	color: #fff;
+	-webkit-font-smoothing: antialiased;
+}
+.site-description {
+	color: rgba(255,255,255,0.5);
+}
+.page-header {
+	color: rgba(255,255,255,0.6);
+	-webkit-font-smoothing: antialiased;
+}
+
+h1.entry-title,
+h1.entry-title a {
+	color: rgba(255,255,255,0.6);
+	-webkit-font-smoothing: antialiased;
+}
+h1.entry-title a:hover {
+	color: rgb(255,255,255);
+	text-shadow: 0 -1px 0 rgba(0,0,0,0.1);
+}
+
+.entry-header .entry-meta {
+	color: rgba(255,255,255,0.3);
+	-webkit-font-smoothing: antialiased;
+}
+.entry-header .entry-meta a {
+	color: rgba(255,255,255,0.4);
+}
+.entry-header .entry-meta a:hover {
+	color: rgba(255,255,255,0.6);
+}
+
+.entry-content,
+.comments-area {
+	color: #fff;
+	font-weight: 200;
+	color: rgba(255,255,255,0.9);
+	text-shadow: 0 -1px 0 rgba(0,0,0,0.2);
+	-webkit-font-smoothing: antialiased;
+}
+.entry-content h1,
+.entry-content h2,
+.entry-content h3,
+.entry-content h4,
+.entry-content h5,
+.entry-content h6 {
+	color: #efefef;
+	color: rgba(255,255,255,0.7);
+}
+
+footer.entry-meta {
+	color: rgba(255,255,255,0.3);
+}
+footer.entry-meta a {
+	color: rgba(255,255,255,0.4);
+}
+footer.entry-meta a:hover {
+	color: rgba(255,255,255,0.6);
+}
+
+#masthead {
+	background: rgba(0,0,0,0.3);
+	border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+#secondary {
+	background: rgba(0,0,0,0.3);
+}
