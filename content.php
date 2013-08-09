@@ -4,6 +4,8 @@
  */
 
 $post_format = get_post_format();
+if ($post_format == '')
+	$post_format = 'standard';
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
