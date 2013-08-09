@@ -47,7 +47,7 @@ if ( post_password_required() )
 				 * define fforward_comment() and that will be used instead.
 				 * See fforward_comment() in inc/template-tags.php for more.
 				 */
-				wp_list_comments( array( 'callback' => 'fforward_comment' ) );
+				wp_list_comments( array( 'callback' => 'fforward_comment', 'avatar_size' => '75' ) );
 			?>
 		</ol><!-- .comment-list -->
 
