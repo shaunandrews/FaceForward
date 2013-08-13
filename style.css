@@ -154,13 +154,17 @@ dfn, cite, em, i {
 	font-style: italic;
 }
 blockquote {
-	margin: 0 1.5em;
+	margin: 0 30px 20px 30px;
+	padding: 25px 30px;
+	border: 3px solid rgba(255,255,255,0.05);
+	outline: 1px solid rgba(0,0,0,0.2);
 }
 address {
 	margin: 0 0 1.5em;
 }
 pre {
-	background: #eee;
+	background: rgba(0,0,0,0.8);
+	color: #fff;
 	font-family: "Courier 10 Pitch", Courier, monospace;
 	font-size: 15px;
 	font-size: 1.5rem;
@@ -174,11 +178,13 @@ code, kbd, tt, var {
 	font: 15px Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 }
 abbr, acronym {
-	border-bottom: 1px dotted #666;
+	border-bottom: 1px dotted rgba(255,255,255,0.6);
+	background: rgba(255,255,255,0.1);
 	cursor: help;
 }
 mark, ins {
-	background: #fff9c0;
+	background: rgba(255,255,255,0.2);
+	border-bottom: 1px solid rgba(255,255,255,0.1);
 	text-decoration: none;
 }
 sup,
@@ -210,6 +216,12 @@ table {
 }
 th {
 	font-weight: bold;
+	border-bottom: 1px solid rgba(255,255,255,0.25);
+	padding: 15px 30px;
+}
+td {
+	padding: 15px 30px;
+	border-bottom: 1px solid rgba(255,255,255,0.1);
 }
 img {
 	height: auto; /* Make sure images are scaled correctly. */
@@ -393,19 +405,15 @@ a:active {}
 .main-navigation ul {
 	list-style: none;
 	margin: 0 auto;
-	padding-left: 0;
-	width: 570px;
-	float: left;
 }
 .main-navigation li {
-	float: left;
 	position: relative;
 }
 .main-navigation a,
 .main-navigation a:visited {
-	float: left;
+	display: block;
 	text-decoration: none;
-	padding: 10px 15px;
+	padding: 15px 30px;
 	color: rgba(255,255,255,0.6);
 }
 .main-navigation a:hover {
@@ -418,24 +426,19 @@ a:active {}
 .main-navigation li:last-child a {
 }
 .main-navigation ul ul {
-	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-	display: none;
-	width: 230px;
-	float: left;
-	position: absolute;
-		top: 40px;
-		left: 0;
-	background: #fff;
 	font-size: 13px;
 }
-.main-navigation ul ul ul {
-	left: 100%;
-	top: 0;
+.main-navigation ul ul a {
+	padding: 8px 30px 8px 45px;
 }
-.main-navigation ul ul a,
-.main-navigation ul ul a:visited {
-	width: 200px;
-	color: #1e8cbe;
+.main-navigation ul ul ul a {
+	padding: 8px 30px 8px 60px;
+}
+.main-navigation ul ul ul ul a {
+	padding: 8px 30px 8px 75px;
+}
+.main-navigation ul ul ul ul ul a {
+	padding: 8px 30px 8px 90px;
 }
 .main-navigation ul ul li {
 }
@@ -450,8 +453,8 @@ a:active {}
 }
 .main-navigation li.current_page_item a,
 .main-navigation li.current-menu-item a {
-	background: #1e8cbe;
-	color: #fff;
+	background: rgba(255,255,255,0.7);
+	color: #222;
 }
 
 /* Small menu */
@@ -783,7 +786,6 @@ object {
 	padding-top: 250px;
 	width: 250px;
 	height: 100%;
-	opacity: 0;
 	overflow: scroll;
 	-webkit-transition: all 0.2s ease-in-out;
 	-moz-transition: all 0.2s ease-in-out;
@@ -805,14 +807,13 @@ object {
 	left: 250px;
 }
 #page.sidebar #secondary {
-	opacity: 1;
 	left: 0;
 }
 
 .site-branding {
 	padding: 30px 0;
 	width: 100%;
-	max-width: 690px;
+	max-width: 750px;
 	margin: 0 auto;
 	-webkit-font-smoothing: antialiased;
 	-webkit-transition: all 0.2s ease-in-out;
@@ -825,8 +826,8 @@ object {
 	height: 140px;
 	width: 140px;
 	position: fixed;
-		left: 30px;
-		top: 15px;
+		left: 35px;
+		top: 35px;
 	z-index: 10;
 }
 .logged-in .site-image {
@@ -835,6 +836,7 @@ object {
 .site-title {
 	font-size: 30px;
 	font-weight: 300;
+	margin: 0 30px;
 }
 .site-title a {
 	text-decoration: none;
@@ -842,6 +844,7 @@ object {
 .site-description {
 	font-weight: 600;
 	font-size: 13px;
+	margin: 0 30px;
 }
 
 
@@ -919,13 +922,13 @@ footer.entry-meta {
 .entry-content h5 {
 	font-size: 16px;
 	margin-bottom: 15px;
-	font-weight:5200;
+	font-weight: 500;
 }
 .entry-content h6 {
-	font-size: 26px;
+	font-size: 13px;
 	margin-bottom: 15px;
 	text-transform: uppercase;
-	font-weight: 500;
+	font-weight: 600;
 }
 .entry-content ul,
 .entry-content ol {
@@ -975,7 +978,7 @@ article.format-image .entry-content {
 		bottom: 0;
 		left: 0;
 	color: rgba(255,255,255,0.6);
-	padding: 25px 330px 25px 30px;
+	padding: 25px 30px;
 	-webkit-transition: all 0.5s ease-in-out;
 	-moz-transition: all 0.5s ease-in-out;
 	transition: all 0.5s ease-in-out;
@@ -1000,12 +1003,8 @@ article.format-image .entry-content p {
 	line-height: 1.4;
 }
 article.format-image footer.entry-meta {
-	padding: 0;
-	font-size: 11px;
 	position: absolute;
-		right: 20px;
-		bottom: 25px;
-	width: 270px;
+		top: 100%;
 }
 article.format-image .entry-image {
 	max-height: 450px;
@@ -1200,12 +1199,19 @@ html #infinite-footer .blog-credits a:hover {
 		zoom: 0.6;
 	}
 }
-@media screen and (max-width: 990px) {
-	.site-branding {
-		padding-left: 120px;
+@media screen and (max-width: 800px) {
+	.site-image {
+		zoom: 0.5;
 	}
 	#masthead,
+	.site-branding,
 	#main {
 		max-width: 100%;
+	}
+	.site-branding {
+		text-align: right;
+	}
+	.site-branding h1.site-title {
+		font-size: 20px;
 	}
 }
