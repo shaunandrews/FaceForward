@@ -133,6 +133,31 @@ function fforward_scripts() {
 add_action( 'wp_enqueue_scripts', 'fforward_scripts' );
 
 /**
+ * Update the preview on the customer-header settings page
+ *
+ */
+function fforward_customer_header_preview() {
+	?>
+	<style type="text/css">
+		.appearance_page_custom-header #headimg #name,
+		.appearance_page_custom-header #headimg #desc {
+			display: none;
+		}
+		.appearance_page_custom-header #headimg {
+			background-size: 150px;
+			border-radius: 100%;
+		}
+		.appearance_page_custom-header .available-headers label img {
+			height: 75px;
+			width: 75px;
+			border-radius: 100%;
+		}
+	</style>
+	<?php
+}
+add_action( 'custom_header_options', 'fforward_customer_header_preview' );
+
+/**
  * Custom template tags for this theme.
  */
 require get_template_directory() . '/inc/template-tags.php';
