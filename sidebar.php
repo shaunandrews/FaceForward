@@ -6,11 +6,12 @@
  */
 ?>
 	<div id="secondary" class="widget-area" role="complementary">
-		<div class="fforward-browse">
-
-		<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
-
 		<?php do_action( 'before_sidebar' ); ?>
+
+		<div class="main-navigation">
+		<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+		</div>
+
 		<?php if ( ! dynamic_sidebar( 'sidebar-1' ) ) : ?>
 			<aside id="meta" class="widget">
 				<h1 class="widget-title"><?php _e( 'Meta', 'fforward' ); ?></h1>
@@ -22,5 +23,4 @@
 			</aside>
 
 		<?php endif; // end sidebar widget area ?>
-		</div>
 	</div><!-- #secondary -->
